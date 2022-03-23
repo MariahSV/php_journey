@@ -1,0 +1,38 @@
+CMSs: wordpress, drupal, magento, october
+
+FRAMEWORKS: symfony, zend, laravel, cake, phalcon
+
+SERVIDOR: apache, ngnix, executadores de php
+
+PHP: a partir da v7.0
+
+PACOTES COMPLETOS: xampp, lampp
+
+TESTES DE PHP: phpinfo();
+
+CONDICIONAIS: if, elseif, else, switch
+
+REPETIÇÕES: while, do while, for, foreach
+
+COMPARADORES: ==, ===, <, >, <=, >=, !=, !==
+
+LÓGICOS: && ou AND, || ou OR, ! ou XOR
+
+SAÍDA OUTPUT: echo, print, var_dump, print_r
+
+FORMULÁRIOS: $_GET, $_POST
+
+SESSÕES: $_SESSION
+
+ARRAYS: qualquer tipo permitido, dimensão livre, add, del, alt livremente e em qualquer momento, indexado (possui índice), associativo (índice numérico ou string), multidimensional (característica de tabela)
+
+
+PROCEDÊNCIA (prioridade) DE OPERADORES (são lidos da esquerda à direita):
+1- funções
+2- parênteses, de dentro pra fora
+3- operadores modulares (?.. que agem sobre uma variável apenas) 
+4- matemáticos
+5- relacionais diversos
+6- relacionais de igualdade ou diferença
+7- operações ternárias
+
