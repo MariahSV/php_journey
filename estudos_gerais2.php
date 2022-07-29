@@ -185,6 +185,71 @@ if(isset($_POST["meses"])){
     </select>
 </form>
 
+<!-- FORMULARIOS -->
+<h3>FORMULARIOS</h3>
+<p> Todo formulário se comporta como um array sendo cada campo uma chave e cada conteúdo o valor dessa chave.
+    <br>A única diferença entre métodos GET e POST são a exposição dos dados ao enviar o formulário.
+    <br>Método GET expõe na URL, enquanto o método POST encriptografa as informações.
+</p>
+<br>
+<form action="metodo_get.php" method="GET"> <!-- Todo form precisa das tags, uma acao e um metodo de envio -->
+    <fieldset> <!-- define um conjunto de campos -->
+        <legend>Formulário de método GET</legend>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar" id="enviar">
+    </p>
+</form>
+
+<p>Lendo a URL após clicar no botão: 
+    <br>- metodo_get.php: arquivo acionado;
+    <br>- ? : parâmetros colhidos anteriormente pelo formulário começam a partir daqui;
+    <br>- nome= (texto digitado) : nome da chave e seu valor atribuído no campo;
+    <br>- & : divisão de atributo;
+    <br>- email (texto digitado): nome da chave e seu valor atribuído.
+</p>
+
+
+<form action="metodo_post.php" method="POST"> <!-- Todo form precisa das tags, uma acao e um metodo de envio -->
+    <fieldset> <!-- define um conjunto de campos -->
+        <legend>Formulário de método POST</legend>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar" id="enviar">
+    </p>
+</form>
+
+<?php ?>
+
+<!--
+https://jornadadodev.com.br/cursos/curso-completo-de-php/aula-89-variaveis-superglobais?ref=playlist
+-->
+
+
+
+
+
+<!-- COLINHA -->
+<!-- SWITCH 
+<h3>Comando SWITCH</h3>
+<?php ?>
+-->
 
 </body>
 </html>
